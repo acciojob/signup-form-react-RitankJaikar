@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../styles/App.css';
 
+/*
 const App = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -141,8 +142,9 @@ const App = () => {
 }
 
 export default App;
+*/
 
-/*
+
 export default function App() {
   const [formData, setFormData] = useState({
     name: '',
@@ -302,4 +304,3 @@ export default function App() {
     </div>
   );
 };
-*/
