@@ -5,7 +5,7 @@ const App = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    gender: "none",
+    gender: "male",
     phoneNumber: "",
     password: ""
   })
@@ -104,7 +104,6 @@ const App = () => {
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
-            <option value="none">none</option>
           </select>
         </div>
 
@@ -135,6 +134,7 @@ const App = () => {
       </form>
 
       {error && <span style={{ color: "red" }}>{error}</span>}
+      <span>Please identify as male, female or others</span>
       {welcomeMessage && <h2>{welcomeMessage}</h2>}
     </div>
   )
