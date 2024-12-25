@@ -135,7 +135,6 @@ const App = () => {
       </form>
 
       {error && <span style={{ color: "red" }}>{error}</span>}
-      <span>Please identify as male, female or others</span>
       {welcomeMessage && <h2>{welcomeMessage}</h2>}
     </div>
   )
