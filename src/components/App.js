@@ -27,7 +27,7 @@ const App = () => {
 
     // Email validation
     if (!email.includes("@")) {
-      return "Email must contain @";
+      return "email must contain @";
     }
 
     // Gender validation
@@ -42,7 +42,7 @@ const App = () => {
 
     // Password length validation
     if (password.length < 6) {
-      return "Password must contain at least 6 letters";
+      return "Password must contain atleast 6 letters";
     }
 
     return "";
@@ -134,7 +134,7 @@ const App = () => {
       </form>
 
       {error && <span style={{ color: "red" }}>{error}</span>}
-      {welcomeMessage && <span>{welcomeMessage}</span>}
+      {welcomeMessage && <h2>{welcomeMessage}</h2>}
     </div>
   )
 }
