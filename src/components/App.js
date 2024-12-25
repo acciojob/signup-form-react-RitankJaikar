@@ -133,8 +133,8 @@ const App = () => {
         </button>
       </form>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {welcomeMessage && <p>{welcomeMessage}</p>}
+      {error && <span style={{ color: "red" }}>{error}</span>}
+      {welcomeMessage && <span>{welcomeMessage}</span>}
     </div>
   )
 }
