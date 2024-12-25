@@ -17,32 +17,32 @@ const App = () => {
 
     // All fields are mandatory
     if (!name || !email || !gender || !phoneNumber || !password) {
-      return "All fields are mandatory.";
+      return "All fields are mandatory";
     }
 
     // Name validation
     if (!/^[a-zA-Z0-9\s]+$/.test(name)) {
-      return "Name is not alphanumeric.";
+      return "Name is not alphanumeric";
     }
 
     // Email validation
     if (!email.includes("@")) {
-      return "Email must contain @.";
+      return "Email must contain @";
     }
 
     // Gender validation
     if (!["male", "female", "other"].includes(gender)) {
-      return "Please identify as male, female or others.";
+      return "Please identify as male, female or others";
     }
 
     // Phone number validation
     if (!/^\d+$/.test(phoneNumber)) {
-      return "Phone Number must contain only numbers.";
+      return "Phone Number must contain only numbers";
     }
 
     // Password length validation
     if (password.length < 6) {
-      return "Password must contain at least 6 letters.";
+      return "Password must contain at least 6 letters";
     }
 
     return "";
