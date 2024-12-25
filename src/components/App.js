@@ -1,11 +1,11 @@
-import React, {Component, use, useState} from "react";
+import React, {useState} from "react";
 import '../styles/App.css';
 
 const App = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    gender: "male",
+    gender: "none",
     phoneNumber: "",
     password: ""
   })
@@ -104,6 +104,7 @@ const App = () => {
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
+            <option value="none">none</option>
           </select>
         </div>
 
