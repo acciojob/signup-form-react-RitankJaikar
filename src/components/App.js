@@ -60,7 +60,7 @@ const App = () => {
     }
 
     const username = formData.email.split("@")[0];
-    setWelcomeMessage(`Hello ${username}`);
+    setWelcomeMessage(`Hello ${username.toUpperCase()}`);
   };
 
   const handleChange = (e) => {
@@ -104,6 +104,7 @@ const App = () => {
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
+            <option value="none">none</option>
           </select>
         </div>
 
