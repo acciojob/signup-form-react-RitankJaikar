@@ -32,22 +32,27 @@ const SignUpForm = () => {
     else{
       if (!/^[a-zA-Z0-9 ]+$/.test(formData.name)) {
         newErrors.name = 'Name is not alphanumeric';
+        return;
       }
  
       if (!formData.email.includes('@')) {
         newErrors.email = 'email must contain @';
+        return;
       }
  
       if (!['male', 'female', 'other'].includes(formData.gender)) {
         newErrors.gender = 'Please identify as male, female or others';
+        return;
       }
  
       if (!/^\d+$/.test(formData.phoneNumber)) {
         newErrors.phoneNumber = 'Phone Number must contain only numbers';
+        return;
       }
  
       if (formData.password.length < 6) {
         newErrors.password = 'Password must contain atleast 6 letters';
+        return;
       }
     }
  
