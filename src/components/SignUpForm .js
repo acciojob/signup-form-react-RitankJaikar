@@ -74,6 +74,8 @@ const SignUpForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: '' }); // Clear previous error messages on input change
   };
+
+  console.log(formData);
  
   return (
     <div>
@@ -114,7 +116,6 @@ const SignUpForm = () => {
               onChange={handleChange}
               data-testid="gender"
           >
-              <option value="" disabled>Please identify as male, female or others</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
               <option value="other">Other</option>  
