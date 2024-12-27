@@ -38,7 +38,7 @@ const SignUpForm = () => {
       return;
     }
 
-    if (!['male', 'female', 'other'].includes(formData.gender)) {
+    if (!['male', 'female'].includes(formData.gender)) {
       setErrors({ err: 'Please identify as male, female, or others' });
       setSubmitted(false);
       return;
@@ -108,8 +108,8 @@ const SignUpForm = () => {
           >
             <option value="">Please select your gender</option>
             <option value="male">Male</option>
-            <option value="female">Femal</option>
-            <option value="other">Othe</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
           </select>
         </label>
         <br />
