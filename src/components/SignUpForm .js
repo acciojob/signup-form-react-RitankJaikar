@@ -107,7 +107,7 @@ const SignUpForm = () => {
             data-testid="gender"
           >
             <option value="">Please select your gender</option>
-            <option value="male">Mal</option>
+            <option value="male">Male</option>
             <option value="female">Femal</option>
             <option value="other">Othe</option>
           </select>
