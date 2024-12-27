@@ -38,12 +38,6 @@ const SignUpForm = () => {
       return;
     }
 
-    if (![].includes(formData.gender)) {
-      setErrors({ err: 'Please identify as male, female or others' });
-      setSubmitted(false);
-      return;
-    }
-
     if (!/^\d+$/.test(formData.phoneNumber)) {
       setErrors({ err: 'Phone Number must contain only numbers' });
       setSubmitted(false);
@@ -52,6 +46,12 @@ const SignUpForm = () => {
 
     if (formData.password.length < 6) {
       setErrors({ err: 'Password must contain atleast 6 letters' });
+      setSubmitted(false);
+      return;
+    }
+
+    if (![].includes(formData.gender)) {
+      setErrors({ err: 'Please identify as male, female or others' });
       setSubmitted(false);
       return;
     }
