@@ -33,7 +33,7 @@ const SignUpForm = () => {
     }
 
     if (!formData.email.includes('@')) {
-      setErrors({ err: 'Email must contain @' });
+      setErrors({ err: 'email must contain @' });
       setSubmitted(false);
       return;
     }
@@ -51,7 +51,7 @@ const SignUpForm = () => {
     }
 
     if (formData.password.length < 6) {
-      setErrors({ err: 'Password must contain at least 6 letters' });
+      setErrors({ err: 'Password must contain atleast 6 letters' });
       setSubmitted(false);
       return;
     }
