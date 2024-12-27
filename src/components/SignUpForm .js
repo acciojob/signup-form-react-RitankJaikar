@@ -38,7 +38,7 @@ const SignUpForm = () => {
       return;
     }
 
-    if (!['male', 'female', 'other'].includes(formData.gender)) {
+    if (![].includes(formData.gender)) {
       setErrors({ err: 'Please identify as male, female or others' });
       setSubmitted(false);
       return;
