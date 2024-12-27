@@ -53,7 +53,6 @@ const SignUpForm = () => {
     if (![].includes(formData.gender)) {
       setErrors({ err: 'Please identify as male, female or others' });
       setSubmitted(false);
-      return;
     }
 
     // Extract username from email
