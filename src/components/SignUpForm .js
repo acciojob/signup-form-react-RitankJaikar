@@ -109,15 +109,15 @@ const SignUpForm = () => {
         <label>
           Gender:
           <select
-            name="gender"
-            value={formData.gender}
-            onChange={handleChange}
-            data-testid="gender"
+              name="gender"
+              value={formData.gender}
+              onChange={handleChange}
+              data-testid="gender"
           >
-            <option value="Please identify as male, female or others">Please identify as male, female or others</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>  
+              <option value="" disabled>Please identify as male, female or others</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>  
           </select>
           <span style={{ color: 'red' }}>{errors.gender}</span>
         </label>
